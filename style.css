@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Main */ 
+
+.container {
+    margin: 10em auto;
+    width: 100%;
+}
+
+
+/* Header */ 
+
+.header-container {
+    padding: 2em; 
+    text-align: center;
+}
+
+.header {
+    color: #002d5b; 
+    font-size: 3em; 
+}
+
+
+/* Slider */ 
+
+.slider-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin: 3em;
+}
+
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #002d5b;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.7em; 
+}
+
+/* Cards */ 
+
+.card-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 1rem 15em; 
+}
+
+.card {
+    background: #f4f3ed;
+    margin: 0.5em;
+    padding: 1em; 
+    width: 35em;
+    height: 15em;
+    display: flex;
+}
+
+.article-title {
+    color: #002d5b; 
+    font-weight: 500;
+}
+
+.company-name {
+    font-style: italic;
+    font-weight: 500;
+    color: #a9b5b7;
+    margin: 1em 0; 
+}
+
+.article-link {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline 3px;
+    letter-spacing: 1px;
+}
+
+.article-link > a {
+    text-transform: uppercase;
+    color: #002d5b; 
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px; 
+}
+
+.content-img {
+    margin: 1em; 
+}
+
+img {
+    height: 8em;
+    width: 8em;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0; 
+    padding: 1em; 
+    line-height: 1.5em;
+}
+
+
+/* Mobile */ 
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 5em auto;
+    }
+
+    .header { 
+        font-size: 2em; 
+    }
+
+    .card-container {
+        justify-content: center;
+        align-items: center; 
+        margin: 1em 1em; 
+    }
+
+    .card {
+        flex-direction: column;
+        width: 35em;
+        height: 25em;
+    }
+
+    .content-img, .content-info, .article-link {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-img {
+        margin: 0em; 
+    }
+
+    .content-info {
+        padding: 0 2em; 
+    }
+}
